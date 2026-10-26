@@ -1,0 +1,118 @@
+1. Known answers
+  ok    identity x M: baseline
+  ok    identity x M: ikj
+  ok    identity x M: blocked bs=64
+  ok    identity x M: blocked bs=1
+  ok    identity x M: blocked bs=3
+  ok    identity x M: sparse (nnz_out=16)
+  ok    M x identity: baseline
+  ok    M x identity: ikj
+  ok    M x identity: blocked bs=64
+  ok    M x identity: blocked bs=1
+  ok    M x identity: blocked bs=3
+  ok    M x identity: sparse (nnz_out=15)
+  ok    zero x M: baseline
+  ok    zero x M: ikj
+  ok    zero x M: blocked bs=64
+  ok    zero x M: blocked bs=1
+  ok    zero x M: blocked bs=3
+  ok    zero x M: sparse (nnz_out=0)
+  ok    2x2 by hand: baseline
+  ok    2x2 by hand: ikj
+  ok    2x2 by hand: blocked bs=64
+  ok    2x2 by hand: blocked bs=1
+  ok    2x2 by hand: blocked bs=3
+  ok    2x2 by hand: sparse (nnz_out=4)
+2-3. Random dense inputs: optimised == baseline bit for bit; baseline vs NumPy
+  ok    n=  1 baseline vs NumPy: max err 0.00e+00, max allowed 3.34e-17
+  ok    n=  1 ikj == baseline (bitwise)
+  ok    n=  1 blocked bs=7 == baseline (bitwise)
+  ok    n=  1 blocked bs=16 == baseline (bitwise)
+  ok    n=  1 blocked bs=64 == baseline (bitwise)
+  ok    n=  1 blocked bs=128 == baseline (bitwise)
+  ok    n=  2 baseline vs NumPy: max err 2.78e-17, max allowed 3.25e-16
+  ok    n=  2 ikj == baseline (bitwise)
+  ok    n=  2 blocked bs=7 == baseline (bitwise)
+  ok    n=  2 blocked bs=16 == baseline (bitwise)
+  ok    n=  2 blocked bs=64 == baseline (bitwise)
+  ok    n=  2 blocked bs=128 == baseline (bitwise)
+  ok    n=  3 baseline vs NumPy: max err 1.11e-16, max allowed 7.14e-16
+  ok    n=  3 ikj == baseline (bitwise)
+  ok    n=  3 blocked bs=7 == baseline (bitwise)
+  ok    n=  3 blocked bs=16 == baseline (bitwise)
+  ok    n=  3 blocked bs=64 == baseline (bitwise)
+  ok    n=  3 blocked bs=128 == baseline (bitwise)
+  ok    n=  7 baseline vs NumPy: max err 4.44e-16, max allowed 4.85e-15
+  ok    n=  7 ikj == baseline (bitwise)
+  ok    n=  7 blocked bs=7 == baseline (bitwise)
+  ok    n=  7 blocked bs=16 == baseline (bitwise)
+  ok    n=  7 blocked bs=64 == baseline (bitwise)
+  ok    n=  7 blocked bs=128 == baseline (bitwise)
+  ok    n= 16 baseline vs NumPy: max err 6.66e-16, max allowed 2.07e-14
+  ok    n= 16 ikj == baseline (bitwise)
+  ok    n= 16 blocked bs=7 == baseline (bitwise)
+  ok    n= 16 blocked bs=16 == baseline (bitwise)
+  ok    n= 16 blocked bs=64 == baseline (bitwise)
+  ok    n= 16 blocked bs=128 == baseline (bitwise)
+  ok    n= 37 baseline vs NumPy: max err 1.78e-15, max allowed 1.01e-13
+  ok    n= 37 ikj == baseline (bitwise)
+  ok    n= 37 blocked bs=7 == baseline (bitwise)
+  ok    n= 37 blocked bs=16 == baseline (bitwise)
+  ok    n= 37 blocked bs=64 == baseline (bitwise)
+  ok    n= 37 blocked bs=128 == baseline (bitwise)
+  ok    n= 64 baseline vs NumPy: max err 4.00e-15, max allowed 2.95e-13
+  ok    n= 64 ikj == baseline (bitwise)
+  ok    n= 64 blocked bs=7 == baseline (bitwise)
+  ok    n= 64 blocked bs=16 == baseline (bitwise)
+  ok    n= 64 blocked bs=64 == baseline (bitwise)
+  ok    n= 64 blocked bs=128 == baseline (bitwise)
+  ok    n=100 baseline vs NumPy: max err 5.33e-15, max allowed 7.32e-13
+  ok    n=100 ikj == baseline (bitwise)
+  ok    n=100 blocked bs=7 == baseline (bitwise)
+  ok    n=100 blocked bs=16 == baseline (bitwise)
+  ok    n=100 blocked bs=64 == baseline (bitwise)
+  ok    n=100 blocked bs=128 == baseline (bitwise)
+  ok    n=130 baseline vs NumPy: max err 7.99e-15, max allowed 1.22e-12
+  ok    n=130 ikj == baseline (bitwise)
+  ok    n=130 blocked bs=7 == baseline (bitwise)
+  ok    n=130 blocked bs=16 == baseline (bitwise)
+  ok    n=130 blocked bs=64 == baseline (bitwise)
+  ok    n=130 blocked bs=128 == baseline (bitwise)
+4. Sparse CSR vs dense baseline on the same COO inputs
+  ok    n=  1 density=0.0 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  1 density=0.01: nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  1 density=0.05: nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  1 density=0.2 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  1 density=0.5 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  1 density=1.0 : nnz A/B=1/1, nnz C=1 (pattern 1); sparse == baseline == blocked
+  ok    n=  5 density=0.0 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  5 density=0.01: nnz A/B=2/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  5 density=0.05: nnz A/B=0/1, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=  5 density=0.2 : nnz A/B=5/4, nnz C=4 (pattern 4); sparse == baseline == blocked
+  ok    n=  5 density=0.5 : nnz A/B=15/12, nnz C=23 (pattern 23); sparse == baseline == blocked
+  ok    n=  5 density=1.0 : nnz A/B=25/25, nnz C=25 (pattern 25); sparse == baseline == blocked
+  ok    n= 37 density=0.0 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n= 37 density=0.01: nnz A/B=16/16, nnz C=7 (pattern 7); sparse == baseline == blocked
+  ok    n= 37 density=0.05: nnz A/B=81/70, nnz C=166 (pattern 166); sparse == baseline == blocked
+  ok    n= 37 density=0.2 : nnz A/B=284/252, nnz C=1047 (pattern 1047); sparse == baseline == blocked
+  ok    n= 37 density=0.5 : nnz A/B=685/669, nnz C=1369 (pattern 1369); sparse == baseline == blocked
+  ok    n= 37 density=1.0 : nnz A/B=1369/1369, nnz C=1369 (pattern 1369); sparse == baseline == blocked
+  ok    n=100 density=0.0 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=100 density=0.01: nnz A/B=95/104, nnz C=104 (pattern 104); sparse == baseline == blocked
+  ok    n=100 density=0.05: nnz A/B=464/483, nnz C=2034 (pattern 2034); sparse == baseline == blocked
+  ok    n=100 density=0.2 : nnz A/B=2021/2005, nnz C=9850 (pattern 9850); sparse == baseline == blocked
+  ok    n=100 density=0.5 : nnz A/B=4927/5024, nnz C=10000 (pattern 10000); sparse == baseline == blocked
+  ok    n=100 density=1.0 : nnz A/B=10000/10000, nnz C=10000 (pattern 10000); sparse == baseline == blocked
+  ok    n=200 density=0.0 : nnz A/B=0/0, nnz C=0 (pattern 0); sparse == baseline == blocked
+  ok    n=200 density=0.01: nnz A/B=423/406, nnz C=879 (pattern 879); sparse == baseline == blocked
+  ok    n=200 density=0.05: nnz A/B=2003/1965, nnz C=15577 (pattern 15577); sparse == baseline == blocked
+  ok    n=200 density=0.2 : nnz A/B=8006/8079, nnz C=39990 (pattern 39990); sparse == baseline == blocked
+  ok    n=200 density=0.5 : nnz A/B=19851/19909, nnz C=40000 (pattern 40000); sparse == baseline == blocked
+  ok    n=200 density=1.0 : nnz A/B=40000/40000, nnz C=40000 (pattern 40000); sparse == baseline == blocked
+5. Input generators
+  ok    dense n=16: byte-identical to the Assignment 1 inputs (SHA-256)
+  ok    dense n=64: byte-identical to the Assignment 1 inputs (SHA-256)
+  ok    sparse n=1000 d=0.01: nnz=10015, expected 10000 +- 497
+  ok    sparse file sorted row-major without duplicates
+
+ALL TESTS PASSED
