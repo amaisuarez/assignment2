@@ -1,0 +1,30 @@
+{
+  "description": "Quick smoke test of the pipeline (NOT for the report)",
+  "seed": 20262027,
+  "java_opts": ["-XX:+UseSerialGC", "-Xms256m", "-Xmx4g"],
+  "repetitions": 3,
+  "warmup_rules": [
+    {"max_n": 1000000, "warmups": 1}
+  ],
+  "batch_target_ms": 50,
+  "per_repetition_budget_s": 20,
+  "process_startup_allowance_s": 30,
+  "memory_budget_bytes": 2000000000,
+  "pin_to_cpu": null,
+  "part_a": {
+    "sizes": [64, 128, 256],
+    "methods": ["baseline", "ikj", "blocked"],
+    "aux_methods": ["ikj_novec", "blocked_novec"],
+    "block": 64
+  },
+  "block_sweep": {
+    "sizes": [256],
+    "blocks": [16, 64, 256]
+  },
+  "part_b": {
+    "sizes": [256],
+    "densities": [0.01, 0.1, 0.5],
+    "methods": ["sparse", "blocked"],
+    "block": 64
+  }
+}

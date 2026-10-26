@@ -1,0 +1,6 @@
+Method,Largest n completed,Failures / not attempted
+baseline,1536,n=2048: timeout
+ikj,2048,none
+blocked,2048,none
+ikj_novec,2048,none
+blocked_novec,2048,none

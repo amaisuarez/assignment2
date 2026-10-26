@@ -1,0 +1,3 @@
+# Only needed for validation (reference) and analysis; the Python implementation itself is pure Python.
+numpy>=1.24
+matplotlib>=3.7

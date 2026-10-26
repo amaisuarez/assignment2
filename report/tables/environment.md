@@ -1,0 +1,6 @@
+- CPU: Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz (2 physical cores, 4 logical processors)
+- RAM: 8.6 GB
+- OS: macOS-10.16-x86_64-i386-64bit-Mach-O
+- Java: OpenJDK Runtime Environment JBR-21.0.6+9-895.97-nomod (build 21.0.6+9-b895.97)
+- JVM options: -XX:+UseSerialGC -Xms256m -Xmx4g
+- Python (harness/analysis): 3.13.5

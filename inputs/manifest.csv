@@ -1,0 +1,25 @@
+n,matrix,file,seed_string,generator,distribution,dtype,bytes,sha256
+16,A,data/A_n16.bin,20262027:16:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,2048,b8f308678f37cd1cb2ea222f0e7c50900ef0f35a5f5fe768050d5e3adbc3c1d6
+16,B,data/B_n16.bin,20262027:16:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,2048,a8ca8b95f19805628d741e88754494140580703195a2aeddb642b8f9af54caa1
+32,A,data/A_n32.bin,20262027:32:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,8192,0fb7a41f795ad37ec7fa5791cc55e582c31e7bee4279bcd6bd3724f73d009d15
+32,B,data/B_n32.bin,20262027:32:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,8192,a7ef0bfd39e07174a9f5e8288029cf950c24c143539753c78471578a574e2881
+64,A,data/A_n64.bin,20262027:64:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,32768,ec3f1d441d2a7e551d4c023ab304de0370766d77799288b79f38c001ab39f5fb
+64,B,data/B_n64.bin,20262027:64:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,32768,7186df9f53d1e474c97e58c4cf14cc093dd12ab70e377b5892ad5a36d4f2a6a9
+128,A,data/A_n128.bin,20262027:128:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,131072,048070a8f0624e8bf01b1027940c7dfda56243c0c71c298611349ceb7fba8cac
+128,B,data/B_n128.bin,20262027:128:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,131072,6de08b614b15816bfa2d7376bdd7eec4d0753f18b4ade078aa4c4273ae0e7a14
+192,A,data/A_n192.bin,20262027:192:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,294912,9d4844411c7439dc9e1c447681b0ec6933ea46cb9c947a9d1eb855874ac78f91
+192,B,data/B_n192.bin,20262027:192:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,294912,e928b43bbf9fe0fd746b1a14841b953a382bb3fa158d56151014d8c94e196055
+256,A,data/A_n256.bin,20262027:256:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,524288,c079efd3db59f7743883778cb29ac351e2f24995c8acb2d725eb7e083cccd8f5
+256,B,data/B_n256.bin,20262027:256:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,524288,bbc9a3f97d2e88d5d09096880bb62acd7ccce095e58c51297f10d117e51ebf54
+384,A,data/A_n384.bin,20262027:384:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,1179648,26fd650aed13b248c48a8ae425b387247dda8f58c8f99a380ce6cf680b35e33b
+384,B,data/B_n384.bin,20262027:384:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,1179648,d1a213c609e1b0522acc0dd55dfad21b01e367af5501736b8aaa476876cbea44
+512,A,data/A_n512.bin,20262027:512:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,2097152,6817bec837243e1ca762cb235696367d3a14541f1f787d360cf79726ce954ede
+512,B,data/B_n512.bin,20262027:512:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,2097152,a7d25dcd9eb782566e795a61557956d817d7e85dc3fe281341ee83e2cb6b70b2
+768,A,data/A_n768.bin,20262027:768:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,4718592,2df515062d7e16f0b2fc347060c7570c77a4c0f278d1c205038cc76deed3e4b1
+768,B,data/B_n768.bin,20262027:768:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,4718592,dbdcb7edfcd9531eb3cd8764010bad9404da8bfc3a356e410d4c2cc9e89921c5
+1024,A,data/A_n1024.bin,20262027:1024:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,8388608,1fb5e32cd49600869d09ab0829b5bd7eb776e8a002727eb6d59bec9234b2f30c
+1024,B,data/B_n1024.bin,20262027:1024:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,8388608,c59d8f6c001b8d2e3681e3b4a4b124f831bde69993f202821d2fbf89e7ef3cbe
+1536,A,data/A_n1536.bin,20262027:1536:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,18874368,8002c35f5b37b2a58e807c95125c88be11f0dfa10af104b3c6330924764499e2
+1536,B,data/B_n1536.bin,20262027:1536:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,18874368,152059431e811656b8df224d0318759d8250ffb995572a1f78b7e1425d7e9972
+2048,A,data/A_n2048.bin,20262027:2048:A,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,33554432,b8df2a901181825fb26b54f15dff3d9aab84f0fb40b3c96bed218e5ca05f6562
+2048,B,data/B_n2048.bin,20262027:2048:B,python random.Random (MT19937),"uniform[-1.0,1.0)",float64-le,33554432,e1058e413062972ae4b0e9a5f3b6aa684c9986e48d0b62f0a44b5795a67fafc7
