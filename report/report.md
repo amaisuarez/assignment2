@@ -495,3 +495,5 @@ each reference exists and supports what I cite it for.
 `matmul-assignment2/` that accompanies this report. The study is
 `results/run_20261026-153110/`; `python3 scripts/analyze.py results/run_20261026-153110`
 regenerates every table and figure from the raw data.
+
+**GitHub repository:** <https://github.com/amaisuarez/assignment2>

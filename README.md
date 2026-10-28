@@ -3,7 +3,7 @@
 **Big Data – Individual Assignment 2** · Amai Suárez Navarro · Grado en Ciencia e Ingeniería de Datos (ULPGC), 2026-2027
 
 This folder has everything behind my second Big Data assignment. It continues
-Assignment 1 (folder `../matmul-assignment1`) and asks two questions:
+Assignment 1 (repository https://github.com/amaisuarez/assignment1) and asks two questions:
 
 > **A.** How much do loop reordering and cache blocking speed up the basic triple-loop
 > multiplication in Java, and how does the gain change with the matrix size *n*?
@@ -12,6 +12,8 @@ Assignment 1 (folder `../matmul-assignment1`) and asks two questions:
 > multiplication beat a dense one, in time and in memory?
 
 The full write-up is in `Assignment02_SuarezNavarro_Report.pdf`.
+
+**Repository:** https://github.com/amaisuarez/assignment2
 
 ---
 
@@ -43,7 +45,7 @@ All methods give **bitwise-identical results** to the Assignment 1 baseline.
 
 ## What I reuse from Assignment 1
 
-| Reused | From (repo `amaisuarez/assignment1`, commit `754ec23`) |
+| Reused | From ([`amaisuarez/assignment1`](https://github.com/amaisuarez/assignment1), commit `754ec23`) |
 |---|---|
 | Baseline kernel | `matmul-assignment1/java/MatMul.java`, method `matmul`, copied unchanged into `java/Dense.java` (`Dense.baseline`) |
 | Dense inputs | `matmul-assignment1/scripts/gen_matrices.py` and `inputs/manifest.csv`, copied unchanged. Same seed `20262027`, so the files are byte-identical to the Assignment 1 inputs (the script checks the SHA-256) |

@@ -1,0 +1,12 @@
+# Generated input matrices (regenerable: scripts/gen_matrices.py, scripts/gen_sparse.py;
+# checksums in inputs/manifest.csv and inputs/sparse_manifest.csv)
+data/
+# Build outputs
+java/build/
+# Python
+__pycache__/
+*.pyc
+.venv/
+# Temporary validation files
+tests/tmp/
+.DS_Store
